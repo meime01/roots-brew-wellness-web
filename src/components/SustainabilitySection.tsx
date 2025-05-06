@@ -5,27 +5,27 @@ const SustainabilitySection = () => {
   const initiatives = [
     {
       title: 'Eco-Friendly Packaging',
-      description: '100% recyclable bottles and compostable labels',
+      description: 'Environmentally conscious materials for all our bottles',
       icon: '🌱',
-      metric: '70% reduction in plastic use'
+      metric: 'Sustainable packaging'
     },
     {
       title: 'Local Sourcing',
       description: 'Supporting local farmers with fair trade practices',
       icon: '🌍',
-      metric: '85% of ingredients locally sourced'
+      metric: 'Community support'
     },
     {
-      title: 'Water Conservation',
-      description: 'Advanced water recycling in our production process',
-      icon: '💧',
-      metric: '50% less water than industry average'
+      title: 'Zero-Waste Process',
+      description: 'Advanced recycling in our production process',
+      icon: '♻️',
+      metric: 'Zero-waste fermentation'
     },
     {
-      title: 'Renewable Energy',
-      description: 'Solar-powered production facilities',
-      icon: '☀️',
-      metric: '40% of energy from renewable sources'
+      title: 'Smallholder Farmers',
+      description: 'Supporting small local farmers in Zimbabwe',
+      icon: '🌾',
+      metric: 'Economic empowerment'
     }
   ];
 
@@ -33,9 +33,9 @@ const SustainabilitySection = () => {
     <section id="sustainability" className="section-padding bg-afriroots-green/10">
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="section-heading">Our Sustainability Commitment</h2>
+          <h2 className="section-heading">Rooted in Responsibility</h2>
           <p className="section-subheading">
-            We believe in nurturing not just people, but also our planet. Our commitment to sustainability guides everything we do.
+            AfriRoots is committed to environmentally conscious production that honors our planet and communities.
           </p>
         </div>
         
@@ -68,7 +68,7 @@ const SustainabilitySection = () => {
               <footer className="flex items-center">
                 <div className="w-12 h-12 bg-afriroots-orange/20 rounded-full mr-4"></div>
                 <div>
-                  <cite className="font-bold text-afriroots-green-dark not-italic">Sarah Johnson</cite>
+                  <cite className="font-bold text-afriroots-green-dark not-italic">AfriRoots Founder</cite>
                   <p className="text-sm text-gray-600">Sustainability Director</p>
                 </div>
               </footer>

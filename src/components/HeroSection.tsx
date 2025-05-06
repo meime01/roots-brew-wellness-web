@@ -6,17 +6,23 @@ const HeroSection = () => {
     <section className="relative bg-gradient-to-b from-afriroots-cream to-white pt-32 pb-16 md:pt-40 md:pb-24">
       <div className="container-custom grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div className="animate-fade-in">
+          <div className="mb-6 max-w-md">
+            <img 
+              src="/lovable-uploads/f198eff1-cf59-4229-8c76-5b1f03088f29.png" 
+              alt="AfriRoots Logo" 
+              className="w-full h-auto"
+            />
+          </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-afriroots-green-dark mb-4">
-            Nature's Nourishment, <span className="text-afriroots-orange">Reimagined</span>
+            Welcome to <span className="text-afriroots-orange">AfriRoots</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-700 mb-8">
-            Discover NutriBrew - our signature beverage crafted from moringa, fermented rice, and watermelon syrup. 
-            A delicious blend of health, sustainability, and African tradition.
+            Discover the refreshing taste of tradition. AfriRoots blends the rich cultural heritage of maheu with modern flavor innovation. Our NutriBrew beverages, available in peppermint and cinnamon, offer a nutritious, delicious experience that connects you to Africa's roots.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button className="btn-primary">Shop Now</Button>
+            <Button className="btn-primary">Try NutriBrew Today</Button>
             <Button variant="outline" className="border-afriroots-green text-afriroots-green hover:bg-afriroots-green hover:text-white">
-              Learn More
+              Explore Flavors
             </Button>
           </div>
         </div>

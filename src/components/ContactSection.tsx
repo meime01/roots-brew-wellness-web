@@ -17,7 +17,7 @@ const ContactSection = () => {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="section-heading">Get In Touch</h2>
           <p className="section-subheading">
-            Have questions about our products or want to collaborate? We'd love to hear from you!
+            We'd love to hear from you! Reach out with questions, feedback, or partnership inquiries.
           </p>
         </div>
         
@@ -32,8 +32,8 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-800">Email Us</h4>
-                  <p className="text-gray-600">hello@afriroots.com</p>
-                  <p className="text-gray-600">support@afriroots.com</p>
+                  <p className="text-gray-600">afrirootsce@gmail.com</p>
+                  <p className="text-gray-600">www.afriroots.co.zw</p>
                 </div>
               </div>
               
@@ -43,8 +43,8 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-800">Call Us</h4>
-                  <p className="text-gray-600">+234 (0) 123 456 7890</p>
-                  <p className="text-gray-600">Mon-Fri, 9am-5pm GMT</p>
+                  <p className="text-gray-600">+263 771 555 555</p>
+                  <p className="text-gray-600">Customer care</p>
                 </div>
               </div>
               
@@ -57,13 +57,28 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-800">Visit Us</h4>
-                  <p className="text-gray-600">123 Healthy Street</p>
-                  <p className="text-gray-600">Lagos, Nigeria</p>
+                  <p className="text-gray-600">3 Baobab Avenue, Orange Grove</p>
+                  <p className="text-gray-600">Chinhoyi, Zimbabwe</p>
                 </div>
               </div>
             </div>
             
-            <h4 className="font-bold text-afriroots-green-dark mb-4">Follow Us</h4>
+            <div className="bg-white p-6 rounded-lg shadow-sm mt-8">
+              <h4 className="font-bold text-afriroots-green-dark mb-4">Ingredient Details</h4>
+              <div className="text-sm text-gray-600">
+                <p><strong>Ingredients:</strong> Brown rice grits, munkonyo, honey, moringa seed powder, peppermint, potassium, sorbate (preservative)</p>
+                <p className="mt-4"><strong>Best Served Chill</strong></p>
+                <ul className="list-disc pl-5 mt-2">
+                  <li>Keep refrigerated after opening and consume within 4 days</li>
+                  <li>Keep away from direct sunlight</li>
+                </ul>
+              </div>
+              <div className="mt-4 p-3 bg-afriroots-cream/50 rounded-lg">
+                <p className="text-sm text-gray-700">A product of Afri Roots Private Limited</p>
+              </div>
+            </div>
+            
+            <h4 className="font-bold text-afriroots-green-dark mb-4 mt-8">Follow Us</h4>
             <div className="flex space-x-4">
               <a href="#" className="bg-afriroots-green hover:bg-afriroots-green-dark text-white p-3 rounded-full transition-colors">
                 <Facebook className="h-5 w-5" />
@@ -138,6 +153,24 @@ const ContactSection = () => {
                 Send Message
               </Button>
             </form>
+          </div>
+        </div>
+        
+        <div className="mt-12 p-6 bg-white rounded-lg shadow-sm">
+          <h3 className="text-xl font-bold text-afriroots-green-dark mb-4">Frequently Asked Questions</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-afriroots-cream/20 p-4 rounded-lg">
+              <h4 className="font-bold text-afriroots-green-dark mb-2">Is NutriBrew vegan?</h4>
+              <p className="text-gray-600 text-sm">Yes, all our NutriBrew products are 100% vegan.</p>
+            </div>
+            <div className="bg-afriroots-cream/20 p-4 rounded-lg">
+              <h4 className="font-bold text-afriroots-green-dark mb-2">How long does it last?</h4>
+              <p className="text-gray-600 text-sm">Best consumed within 5–7 days when kept chilled.</p>
+            </div>
+            <div className="bg-afriroots-cream/20 p-4 rounded-lg">
+              <h4 className="font-bold text-afriroots-green-dark mb-2">Can children drink it?</h4>
+              <p className="text-gray-600 text-sm">Absolutely—NutriBrew is safe and healthy for all ages.</p>
+            </div>
           </div>
         </div>
       </div>

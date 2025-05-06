@@ -7,35 +7,33 @@ import { Card, CardContent } from '@/components/ui/card';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const ProductsSection = () => {
-  const [activeFlavor, setActiveFlavor] = useState('original');
+  const [activeFlavor, setActiveFlavor] = useState('peppermint');
   
   const flavors = [
-    { id: 'original', name: 'Original', color: 'bg-afriroots-green/20', image: '/lovable-uploads/10b82289-2764-49b8-a585-a46baaba0c3f.png' },
-    { id: 'peppermint', name: 'Peppermint', color: 'bg-amber-200', image: '/lovable-uploads/b038e157-d4da-427a-b88f-6c369fd7494d.png' },
-    { id: 'berry', name: 'Berry Bliss', color: 'bg-red-200', image: '/lovable-uploads/10b82289-2764-49b8-a585-a46baaba0c3f.png' },
-    { id: 'ginger', name: 'Ginger Zing', color: 'bg-yellow-200', image: '/lovable-uploads/b038e157-d4da-427a-b88f-6c369fd7494d.png' },
+    { id: 'peppermint', name: 'Peppermint', color: 'bg-amber-200', image: '/lovable-uploads/10b82289-2764-49b8-a585-a46baaba0c3f.png' },
+    { id: 'cinnamon', name: 'Cinnamon', color: 'bg-red-200', image: '/lovable-uploads/b038e157-d4da-427a-b88f-6c369fd7494d.png' },
   ];
   
   const benefits = [
     { 
       icon: <Heart className="h-6 w-6 text-afriroots-orange" />, 
-      title: 'Boosts Immunity', 
-      description: 'Rich in antioxidants and vitamins to strengthen your immune system' 
+      title: 'Naturally fermented', 
+      description: 'Traditional fermentation process enhances flavor and nutrients' 
     },
     { 
       icon: <Zap className="h-6 w-6 text-afriroots-orange" />, 
-      title: 'Natural Energy', 
-      description: 'Clean energy without the crash from natural ingredients' 
+      title: 'Probiotic benefits', 
+      description: 'Supports gut health and improves digestion' 
     },
     { 
       icon: <Star className="h-6 w-6 text-afriroots-orange" />, 
-      title: 'Improves Digestion', 
-      description: 'Fermented ingredients support gut health and digestion' 
+      title: 'No artificial preservatives', 
+      description: 'Only natural ingredients for a pure taste experience' 
     },
     { 
       icon: <Book className="h-6 w-6 text-afriroots-orange" />, 
-      title: 'Brain Health', 
-      description: 'Contains nutrients that support cognitive function' 
+      title: 'Rich in nutrients', 
+      description: 'Packed with fiber and essential nutrients' 
     }
   ];
 
@@ -73,10 +71,9 @@ const ProductsSection = () => {
             </h3>
             
             <p className="text-gray-700 mb-6">
-              Our signature beverage blends the nutritional power of moringa leaves, 
-              fermented rice, and naturally sweet watermelon syrup. Each bottle contains 
-              a perfect balance of vitamins, minerals, and antioxidants in a delicious, 
-              refreshing drink.
+              {activeFlavor === 'peppermint' ? 
+                'A cool, revitalizing twist on traditional maheu. Our peppermint NutriBrew is perfect for hot days and digestive support. Each 400ml bottle is packed with refreshing flavor and nutrition.' :
+                'Warm, comforting, and packed with flavor and antioxidants. Our cinnamon NutriBrew is ideal for a cozy refreshment. Each 400ml bottle offers a perfect balance of tradition and innovation.'}
             </p>
             
             <div className="flex flex-wrap gap-3 mb-8">
@@ -118,11 +115,11 @@ const ProductsSection = () => {
         
         <div className="mt-24">
           <div className="text-center mb-10">
-            <h3 className="text-2xl font-bold text-afriroots-green-dark mb-3">Featured Flavors</h3>
-            <p className="text-gray-600">Explore our range of delicious, nutrient-packed flavors</p>
+            <h3 className="text-2xl font-bold text-afriroots-green-dark mb-3">Featured Products</h3>
+            <p className="text-gray-600">Our range of nutritious, traditional beverages</p>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
             {flavors.map((flavor) => (
               <Card key={flavor.id} className="overflow-hidden hover:shadow-lg transition-shadow">
                 <div className={`${flavor.color} p-4`}>
@@ -135,8 +132,8 @@ const ProductsSection = () => {
                   </AspectRatio>
                 </div>
                 <CardContent className="pt-4">
-                  <h4 className="font-bold text-afriroots-green-dark">{flavor.name}</h4>
-                  <p className="text-sm text-gray-600 mt-1">Fermented rice drink</p>
+                  <h4 className="font-bold text-afriroots-green-dark">NutriBrew {flavor.name}</h4>
+                  <p className="text-sm text-gray-600 mt-1">400ml bottle</p>
                   <div className="flex justify-between items-center mt-3">
                     <span className="font-bold text-afriroots-orange">$3.99</span>
                     <Button variant="outline" size="sm" className="text-xs border-afriroots-green text-afriroots-green hover:bg-afriroots-green hover:text-white">

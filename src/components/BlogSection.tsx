@@ -5,27 +5,27 @@ import { Badge } from '@/components/ui/badge';
 const BlogSection = () => {
   const blogPosts = [
     {
-      title: 'The Extraordinary Health Benefits of Moringa',
-      excerpt: 'Discover why moringa is considered a superfood and how it can improve your health in multiple ways.',
+      title: 'AfriRoots officially launches in Zimbabwe',
+      excerpt: 'AfriRoots celebrates its grand opening with a showcase of traditional and innovative beverages.',
       image: '/placeholder.svg',
-      date: 'May 2, 2023',
-      category: 'Health',
+      date: 'April 2025',
+      category: 'News',
       slug: '#'
     },
     {
-      title: 'Traditional Fermentation: Ancient Wisdom for Modern Health',
-      excerpt: 'How traditional fermentation techniques enhance both flavor and nutrition in food and beverages.',
+      title: 'NutriBrew hits local retailers',
+      excerpt: 'Find our signature NutriBrew beverages in selected stores across Zimbabwe.',
       image: '/placeholder.svg',
-      date: 'April 15, 2023',
-      category: 'Nutrition',
+      date: 'May 2025',
+      category: 'Products',
       slug: '#'
     },
     {
-      title: 'Sustainable Farming Practices in Africa',
-      excerpt: 'Learn about how sustainable farming practices are making a difference in African communities.',
+      title: 'Community tasting events announced',
+      excerpt: 'Join us for special tasting events across Zimbabwe and experience the unique flavors of NutriBrew.',
       image: '/placeholder.svg',
-      date: 'March 28, 2023',
-      category: 'Sustainability',
+      date: 'June 2025',
+      category: 'Events',
       slug: '#'
     }
   ];
@@ -34,9 +34,9 @@ const BlogSection = () => {
     <section id="blog" className="section-padding bg-white">
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="section-heading">Our Blog</h2>
+          <h2 className="section-heading">News & Events</h2>
           <p className="section-subheading">
-            Explore our insights on health, nutrition, sustainability, and the rich traditions behind our ingredients.
+            Stay updated with the latest happenings at AfriRoots and upcoming events.
           </p>
         </div>
         
@@ -76,7 +76,7 @@ const BlogSection = () => {
         </div>
         
         <div className="text-center mt-12">
-          <Button className="btn-primary">View All Articles</Button>
+          <Button className="btn-primary">View All News</Button>
         </div>
       </div>
     </section>
