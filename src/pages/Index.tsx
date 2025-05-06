@@ -8,6 +8,7 @@ import SustainabilitySection from '@/components/SustainabilitySection';
 import BlogSection from '@/components/BlogSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
+import { Toaster } from '@/components/ui/toaster';
 
 const Index = () => {
   return (
@@ -21,6 +22,7 @@ const Index = () => {
       <BlogSection />
       <ContactSection />
       <Footer />
+      <Toaster />
     </div>
   );
 };

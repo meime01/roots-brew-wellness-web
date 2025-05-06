@@ -3,15 +3,17 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Heart, Zap, Star, Book } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const ProductsSection = () => {
   const [activeFlavor, setActiveFlavor] = useState('original');
   
   const flavors = [
-    { id: 'original', name: 'Original', color: 'bg-afriroots-green/20' },
-    { id: 'mango', name: 'Mango Splash', color: 'bg-yellow-200' },
-    { id: 'berry', name: 'Berry Bliss', color: 'bg-red-200' },
-    { id: 'ginger', name: 'Ginger Zing', color: 'bg-amber-200' },
+    { id: 'original', name: 'Original', color: 'bg-afriroots-green/20', image: '/lovable-uploads/10b82289-2764-49b8-a585-a46baaba0c3f.png' },
+    { id: 'peppermint', name: 'Peppermint', color: 'bg-amber-200', image: '/lovable-uploads/b038e157-d4da-427a-b88f-6c369fd7494d.png' },
+    { id: 'berry', name: 'Berry Bliss', color: 'bg-red-200', image: '/lovable-uploads/10b82289-2764-49b8-a585-a46baaba0c3f.png' },
+    { id: 'ginger', name: 'Ginger Zing', color: 'bg-yellow-200', image: '/lovable-uploads/b038e157-d4da-427a-b88f-6c369fd7494d.png' },
   ];
   
   const benefits = [
@@ -52,8 +54,8 @@ const ProductsSection = () => {
             <div className={`${flavors.find(f => f.id === activeFlavor)?.color} rounded-full h-64 w-64 md:h-80 md:w-80 mx-auto transition-colors duration-500`}></div>
             <div className="absolute inset-0 flex items-center justify-center">
               <img 
-                src="/placeholder.svg" 
-                alt="NutriBrew Product" 
+                src={flavors.find(f => f.id === activeFlavor)?.image} 
+                alt={`NutriBrew ${flavors.find(f => f.id === activeFlavor)?.name} Flavor`} 
                 className="h-72 md:h-96 object-contain transition-all duration-500"
               />
             </div>
@@ -111,6 +113,39 @@ const ProductsSection = () => {
                 View Nutrition Facts
               </Button>
             </div>
+          </div>
+        </div>
+        
+        <div className="mt-24">
+          <div className="text-center mb-10">
+            <h3 className="text-2xl font-bold text-afriroots-green-dark mb-3">Featured Flavors</h3>
+            <p className="text-gray-600">Explore our range of delicious, nutrient-packed flavors</p>
+          </div>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {flavors.map((flavor) => (
+              <Card key={flavor.id} className="overflow-hidden hover:shadow-lg transition-shadow">
+                <div className={`${flavor.color} p-4`}>
+                  <AspectRatio ratio={1 / 1} className="bg-white/20 rounded-lg">
+                    <img 
+                      src={flavor.image} 
+                      alt={`NutriBrew ${flavor.name}`}
+                      className="object-contain p-4 h-full w-full"
+                    />
+                  </AspectRatio>
+                </div>
+                <CardContent className="pt-4">
+                  <h4 className="font-bold text-afriroots-green-dark">{flavor.name}</h4>
+                  <p className="text-sm text-gray-600 mt-1">Fermented rice drink</p>
+                  <div className="flex justify-between items-center mt-3">
+                    <span className="font-bold text-afriroots-orange">$3.99</span>
+                    <Button variant="outline" size="sm" className="text-xs border-afriroots-green text-afriroots-green hover:bg-afriroots-green hover:text-white">
+                      Add to Cart
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </div>

@@ -24,7 +24,7 @@ const HeroSection = () => {
           <div className="bg-afriroots-green/10 rounded-full h-64 w-64 md:h-80 md:w-80 mx-auto"></div>
           <div className="absolute inset-0 flex items-center justify-center">
             <img 
-              src="/placeholder.svg" 
+              src="/lovable-uploads/10b82289-2764-49b8-a585-a46baaba0c3f.png" 
               alt="NutriBrew Product" 
               className="h-72 md:h-96 object-contain"
             />
