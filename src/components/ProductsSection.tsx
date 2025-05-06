@@ -135,7 +135,7 @@ const ProductsSection = () => {
                   <h4 className="font-bold text-afriroots-green-dark">NutriBrew {flavor.name}</h4>
                   <p className="text-sm text-gray-600 mt-1">400ml bottle</p>
                   <div className="flex justify-between items-center mt-3">
-                    <span className="font-bold text-afriroots-orange">$3.99</span>
+                    <span className="font-bold text-afriroots-orange">$0.50</span>
                     <Button variant="outline" size="sm" className="text-xs border-afriroots-green text-afriroots-green hover:bg-afriroots-green hover:text-white">
                       Add to Cart
                     </Button>
