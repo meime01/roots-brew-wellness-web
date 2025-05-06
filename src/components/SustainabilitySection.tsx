@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 
 const SustainabilitySection = () => {
@@ -30,8 +29,15 @@ const SustainabilitySection = () => {
   ];
 
   return (
-    <section id="sustainability" className="section-padding bg-afriroots-green/10">
-      <div className="container-custom">
+    <section id="sustainability" className="section-padding bg-afriroots-green/10 relative">
+      <div className="absolute inset-0 opacity-10 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
+          alt="Natural landscape" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="container-custom relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="section-heading">Rooted in Responsibility</h2>
           <p className="section-subheading">

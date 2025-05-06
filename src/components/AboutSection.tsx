@@ -16,8 +16,8 @@ const AboutSection = () => {
           <div className="relative">
             <div className="bg-afriroots-cream rounded-lg overflow-hidden shadow-lg">
               <img 
-                src="/placeholder.svg" 
-                alt="AfriRoots Team" 
+                src="https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                alt="African landscape representing our roots" 
                 className="w-full h-auto"
               />
             </div>

@@ -7,7 +7,7 @@ const BlogSection = () => {
     {
       title: 'AfriRoots officially launches in Zimbabwe',
       excerpt: 'AfriRoots celebrates its grand opening with a showcase of traditional and innovative beverages.',
-      image: '/placeholder.svg',
+      image: 'https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
       date: 'April 2025',
       category: 'News',
       slug: '#'
@@ -15,7 +15,7 @@ const BlogSection = () => {
     {
       title: 'NutriBrew hits local retailers',
       excerpt: 'Find our signature NutriBrew beverages in selected stores across Zimbabwe.',
-      image: '/placeholder.svg',
+      image: 'https://images.unsplash.com/photo-1518495973542-4542c06a5843?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
       date: 'May 2025',
       category: 'Products',
       slug: '#'
@@ -23,7 +23,7 @@ const BlogSection = () => {
     {
       title: 'Community tasting events announced',
       excerpt: 'Join us for special tasting events across Zimbabwe and experience the unique flavors of NutriBrew.',
-      image: '/placeholder.svg',
+      image: 'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
       date: 'June 2025',
       category: 'Events',
       slug: '#'
